@@ -13,5 +13,7 @@ This repo is a quick demonstration of the power of relational programming for ex
 
 To run any of the "practice" files, you'll need to have HHVM installed - that was half the battle for me - but after that it's easy:
 `hhvm practice_1.php`
+
 `hhvm practice_2.php`
+
 ..etc
