@@ -1,10 +1,19 @@
 <?php
 
+namespace igorw\reasoned;
+
 require 'vendor/autoload.php';
 
-//Show which values of q and r will satisfy q^2 + r^2 = 5^2 
-var_dump(\igorw\reasoned\run_star(function ($q, $r) {
-	return \igorw\reasoned\pluso(pow($q,2), pow($r,2), \igorw\reasoned\build_num(pow(5,2)) );
+//Show which values of q will satisfy q^2 = 2^4 = 16   
+var_dump(run_star(function ($q) {
+	return expo($q, [0, 1], [0, 0, 0, 0, 1] );
 }));
 
-//Pukes once it gets here. Will continue playing with this a bit more...
+//Expecting 4, ie:
+// [0, 0, 1]
+
+
+//More Readable, same thing:
+var_dump(run_star(function ($q) {
+	return expo($q, build_num(2), build_num(16) );
+}));
