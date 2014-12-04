@@ -1,0 +1,60 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "76fa2534b2f7eaaffc4c9cfe414e7653",
+    "packages": [
+        {
+            "name": "igorw/reasoned",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/igorw/reasoned-php.git",
+                "reference": "3a1ab3ff81e685c7717dcc8d810a3341ddbc2db7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/igorw/reasoned-php/zipball/3a1ab3ff81e685c7717dcc8d810a3341ddbc2db7",
+                "reference": "3a1ab3ff81e685c7717dcc8d810a3341ddbc2db7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "reasoned.php",
+                    "oleg-numbers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch",
+                    "homepage": "http://wiedler.ch/igor/"
+                }
+            ],
+            "description": "A miniKanren in PHP.",
+            "keywords": [
+                "logic"
+            ],
+            "time": "2014-07-06 18:40:02"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "igorw/reasoned": 20
+    },
+    "prefer-stable": false,
+    "platform": [],
+    "platform-dev": []
+}

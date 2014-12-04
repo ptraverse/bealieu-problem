@@ -1,0 +1,29 @@
+curl -sS https://getcomposer.org/installer | php
+php composer.phar --init
+
+//Currently @ PHP 5.4 so can't use https://packagist.org/packages/igorw/reasoned
+//Try to do it the old fashioned way instead then...
+git clone https://github.com/igorw/reasoned-php.git
+
+//Crap. I actually do need 5.5 since it uses php Lists ... Fine:
+sudo apt-get update
+sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:ondrej/php5
+sudo apt-get update
+sudo apt-get dist-upgrade
+
+//remove cloned folder ... ffs
+rm ./reasoned-php/ -rf
+
+//now add it to composer the Right Way- "igorw/reasoned": "dev-master"
+php composer.phar update
+
+//try and run it one more time
+php practice_1.php
+
+//need HHVM - jesus H  
+//!%$!5!$!5$@$5@$ sonofabitch - HHVM not supported on 32 bit machines... adding 64bit support to BIOS
+//and adding whole new 64 bit ubuntu VM just for this project... fffff
+// ... half an hour later we're good to go - hhvm installed - shiny new 64bit ubuntu 14.04 up and running
+
+hhvm practice_1.php ... WORKS!!
